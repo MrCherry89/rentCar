@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="ru" class="fixed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <main class="main">
+
+      <header class="header header-bg">
+        <div class="container">
+          <div class="header-info">
+            <a href="index.html" class="logo">
+              <img src="img/logo.svg" alt="">
+            </a>
+            <div class="menu-wrap">
+              <ul class="main-menu">
+                <li><a href="#">Каталог автомобилей</a></li>
+                <li><a href="#">Условия аренды</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <div class="soc-icons">
+                <a href="#"><img src="img/soc-icon1.svg" alt=""></a>
+                <a href="#"><img src="img/soc-icon2.svg" alt=""></a>
+                <a href="#" class="hide"><img src="img/soc-icon3.svg" alt=""></a>
+              </div>
+              <div class="phone-wrap">
+                <a href="tel:+79005001010" class="phone">+7 (900) 500-10-10</a>
+                <span>Работаем Пн-Сб с 9:00 до 21:00</span>
+              </div>
+            </div>
+            <div class="soc-icons-mobile">
+              <a href="#"><img src="img/soc-icon1.svg" alt=""></a>
+              <a href="#"><img src="img/soc-icon2.svg" alt=""></a>
+              <a href="#"><img src="img/soc-icon3.svg" alt=""></a>
+            </div>
+            <div class="drop-menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="popups-wrap">
+        <div class="container">
+            <div class="rent-modal">
+                <button class="rent-modal__close">
+                    <img src="img/close.svg" alt="">
+                </button>
+            
+                <h2 class="rent-title">ПЕРИОД АРЕНДЫ АВТОМОБИЛЯ</h2>
+            
+                <div class="rent-content">
+            
+                <div class="calendar">
+                    <div class="calendar-range">
+                    25.01.26 – 26.03.26
+                    </div>
+            
+                    <div class="calendar-header">
+                    <button class="calendar-nav">‹</button>
+                    <span>январь 2026 г.</span>
+                    <button class="calendar-nav">›</button>
+                    </div>
+            
+                    <div class="calendar-week">
+                    <span>П</span><span>В</span><span>С</span><span>Ч</span><span>П</span><span>С</span><span>В</span>
+                    </div>
+            
+                    <div class="calendar-grid">
+                    <span class="day muted">29</span>
+                    <span class="day muted">30</span>
+                    <span class="day muted">31</span>
+            
+                    <span class="day">1</span>
+                    <span class="day">2</span>
+                    <span class="day">3</span>
+                    <span class="day">4</span>
+            
+                    <span class="day">5</span>
+                    <span class="day">6</span>
+                    <span class="day">7</span>
+                    <span class="day active">8</span>
+                    <span class="day active">9</span>
+                    <span class="day active">10</span>
+                    <span class="day active">11</span>
+            
+                    <span class="day active">12</span>
+                    <span class="day active">13</span>
+                    <span class="day active">14</span>
+                    <span class="day active">15</span>
+                    <span class="day active">16</span>
+                    <span class="day active">17</span>
+                    <span class="day active">18</span>
+            
+                    <span class="day active">19</span>
+                    <span class="day active">20</span>
+                    <span class="day">21</span>
+                    <span class="day">22</span>
+                    <span class="day">23</span>
+                    <span class="day">24</span>
+                    <span class="day">25</span>
+            
+                    <span class="day">26</span>
+                    <span class="day">27</span>
+                    <span class="day">28</span>
+                    <span class="day">29</span>
+                    <span class="day">30</span>
+                    <span class="day">31</span>
+                    </div>
+                </div>
+            
+                <div class="rent-info">
+                    <div class="field">
+                    <label>Время начала аренды</label>
+                    <div class="input">14:00</div>
+                    </div>
+            
+                    <div class="field">
+                    <label>Время окончания аренды</label>
+                    <div class="input">22:00</div>
+                    </div>
+            
+                    <div class="rent-note">
+                    <p>За выдачу/прием автомобиля ранее или позднее взимается доп. плата</p>
+                    <div class="rent-fee">
+                        <span>9.00 – 18.00</span>
+                        <span class="border"></span>
+                        <span class="free">Без доплат</span>
+                    </div>
+                    <div class="rent-fee">
+                        <span>6.00 – 9.00</span>
+                        <span class="border"></span>
+                        <span class="paid">+ 2000 ₽</span>
+                    </div>
+                    <div class="rent-fee">
+                        <span>18.00 – 24.00</span>
+                        <span class="border"></span>
+                        <span class="paid">+ 2000 ₽</span>
+                    </div>
+                    </div>
+                </div>
+            
+                </div>
+            
+                <div class="rent-actions">
+                <button class="btn border-btn">Отмена</button>
+                <button class="btn red-btn">Сохранить</button>
+                </div>
+            </div>
+            <div class="global-modal">
+                <button class="modal-close">
+                    <img src="img/close.svg" alt="">
+                </button>
+                <div class="modal-information">
+                    <div class="text-style">
+                        <span>13.01.2026-31.01.2026</span>
+                    </div>
+                    <h2>
+                        на выбранный период нет свободных машин
+                    </h2>
+                    <p>
+                        Оставьте заявку - если у нас появится свободный
+                         автомобиль, мы с вами свяжемся
+                    </p>
+                    <form class="modal-form">
+                        <input type="text" name="name" placeholder="Введите ваше имя">
+                        <input type="tel" name="phone" placeholder="Введите ваш номер телефона">
+                        <button class="red-btn">Оставить заявку на подбор</button>
+                        <p>
+                            Оставляя заявку на нашем сайте, вы даете свое 
+                            согласие на <a href="#">обработку персональных данных</a> и 
+                            соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+            <div class="global-modal">
+                <button class="modal-close">
+                    <img src="img/close.svg" alt="">
+                </button>
+                <div class="modal-information">
+                    <div class="text-style">
+                        <img src="img/style-icon.png" alt="">
+                        <span>Консультация</span>
+                    </div>
+                    <h2>
+                        подберем для вас лучший вариант
+                    </h2>
+                    <p>
+                        Оставьте свои контактные данные
+                        и получите подбор автомобиля
+                    </p>
+                    <form class="modal-form">
+                        <input type="text" name="name" placeholder="Введите ваше имя">
+                        <input type="tel" name="phone" placeholder="Введите ваш номер телефона">
+                        <button class="red-btn">Оставить заявку на подбор</button>
+                        <p>
+                            Оставляя заявку на нашем сайте, вы даете свое 
+                            согласие на <a href="#">обработку персональных данных</a> и 
+                            соглашаетесь с <a href="#">политикой конфиденциальности</a>
+                        </p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+      <footer class="footer">
+    <div class="container">
+        <div class="footer-top">
+        <div class="text-style style2">
+            <img src="img/style-icon.png" alt="">
+            <span> Консультация</span>
+        </div>
+        <h2>подберем для вас лучший вариант</h2>
+        <h4>Оставьте свои контактные данные и получите подбор
+            автомобиля индивидуально под ваш запрос</h4>
+        <form class="leave-request">
+            <input type="text" name="name" placeholder="Введите ваше имя">
+            <input type="tel" name="phone" placeholder="Введите ваш номер телефона">
+            <button class="red-btn">Оставить заявку на подбор</button>
+        </form>
+        <p class="text">
+            Оставляя заявку на нашем сайте, вы даете свое согласие на <a href="#">
+            обработку персональных данных</a>
+            и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+        </p>
+        </div>
+        <div class="footer-bottom">
+        <p class="copyright">© 2025 - Нам по пути. Права защищены</p>
+        <a href="#" class="footer-link">Публичная оферта</a>
+        <a href="#" class="footer-link">Политика конфиденциальности</a>
+        <img src="img/avito-logo.svg" alt="">
+        </div>
+    </div>
+      </footer>
+
+    </main>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+
+
+  </body>
+</html>

@@ -11,7 +11,7 @@ $(document).ready(function () {
           nextEl: '.review-next',
           prevEl: '.review-prev',
         },
-      
+    
         breakpoints: {
           0: {
             slidesPerView: 1, // <768
@@ -55,16 +55,16 @@ $(".drop-menu").click(function () {
   $(this).toggleClass("is-active");
   $(".menu-wrap").toggleClass("open");
   $("body, html").toggleClass("overflow");
+  $(".header.header-bg").toggleClass("no-radius");
 });
 
 document.addEventListener('click', function (e) {
   const icon = e.target.closest('.tooltip-icon');
   const tooltips = document.querySelectorAll('.tooltip-info');
 
-  // Сначала закрываем все tooltip
+
   tooltips.forEach(t => t.classList.remove('open'));
 
-  // Если клик по иконке
   if (icon) {
     const tooltip = icon.closest('.img-wrap').querySelector('.tooltip-info');
 
@@ -72,7 +72,6 @@ document.addEventListener('click', function (e) {
       tooltip.classList.add('open');
     }
 
-    // останавливаем всплытие, чтобы document не закрыл сразу
     e.stopPropagation();
   }
 });
