@@ -12,7 +12,7 @@
       align-items: center;
       justify-content: space-between;
       margin-bottom: 40px;
-      @media(max-width: 1024px){
+      @media(max-width: 767px){
         flex-direction: column;
         margin-bottom: 30px;
       }
@@ -30,14 +30,20 @@
         text-transform: uppercase;
         @media(max-width: 1024px){
           font-size: 26px;
+        }
+        @media(max-width: 767px){
           margin-bottom: 12px;
+          font-size: 24px;
         }
       }
       .rev-logo{
         max-width: 255px;
         @media(max-width: 1024px){
+          max-width: 160px;
+        }
+        @media(max-width: 767px){
           margin: 12px 0;
-          max-width: 230px;
+          max-width: 240px;
         }
       }
     }
@@ -127,6 +133,7 @@ button{
   
   .faq-head span {
     font-size: 20px;
+    color: #373737;
     text-transform: uppercase;
     @media(max-width: 1024px){
       font-size: 16px;
@@ -184,7 +191,7 @@ button{
     max-width: 500px;
     @media(max-width: 1024px){
       font-size: 14px;
-      line-height: 120%;
+      line-height: 20px;
       padding-bottom: 20px;
     }
   }
@@ -343,6 +350,11 @@ button{
       grid-template-columns: 1fr;
       gap: 30px;
       margin-bottom: 40px;
+      .car-item{
+        &:nth-child(n + 5){
+            display: none;
+        }
+      }
     }
   }
 

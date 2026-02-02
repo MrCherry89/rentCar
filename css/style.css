@@ -927,7 +927,7 @@ a:focus {
   justify-content: space-between;
   margin-bottom: 40px;
 }
-@media (max-width: 1024px) {
+@media (max-width: 767px) {
   .review-block .title-wrap {
     flex-direction: column;
     margin-bottom: 30px;
@@ -949,7 +949,12 @@ a:focus {
 @media (max-width: 1024px) {
   .review-block .title-wrap h2 {
     font-size: 26px;
+  }
+}
+@media (max-width: 767px) {
+  .review-block .title-wrap h2 {
     margin-bottom: 12px;
+    font-size: 24px;
   }
 }
 .review-block .title-wrap .rev-logo {
@@ -957,8 +962,13 @@ a:focus {
 }
 @media (max-width: 1024px) {
   .review-block .title-wrap .rev-logo {
+    max-width: 160px;
+  }
+}
+@media (max-width: 767px) {
+  .review-block .title-wrap .rev-logo {
     margin: 12px 0;
-    max-width: 230px;
+    max-width: 240px;
   }
 }
 .review-block .arrow-wrap {
@@ -1056,6 +1066,7 @@ a:focus {
 
 .faq-head span {
   font-size: 20px;
+  color: #373737;
   text-transform: uppercase;
 }
 @media (max-width: 1024px) {
@@ -1119,7 +1130,7 @@ a:focus {
 @media (max-width: 1024px) {
   .faq-body p {
     font-size: 14px;
-    line-height: 120%;
+    line-height: 20px;
     padding-bottom: 20px;
   }
 }
@@ -1297,6 +1308,9 @@ a:focus {
     grid-template-columns: 1fr;
     gap: 30px;
     margin-bottom: 40px;
+  }
+  .our-cars-items .car-item:nth-child(n+5) {
+    display: none;
   }
 }
 
