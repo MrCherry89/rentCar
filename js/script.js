@@ -76,4 +76,8 @@ document.addEventListener('click', function (e) {
   }
 });
 
+$(".found-tab-item").on("click", function(){
+  $(this).toggleClass("active");
+})
+
 });

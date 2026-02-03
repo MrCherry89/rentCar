@@ -1440,6 +1440,154 @@ a:focus {
   color: #EE132A;
 }
 
+.catalog-wrap {
+  padding: 50px 0;
+}
+@media (max-width: 767px) {
+  .catalog-wrap {
+    padding: 40px 0;
+  }
+}
+.catalog-wrap h1 {
+  margin-bottom: 20px;
+  color: #373737;
+  font-size: 55px;
+  font-weight: 400;
+  line-height: 130%;
+  letter-spacing: 1.1px;
+  text-transform: uppercase;
+}
+@media (max-width: 1024px) {
+  .catalog-wrap h1 {
+    font-size: 40px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog-wrap h1 {
+    font-size: 24px;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+}
+.catalog-wrap .subtitle {
+  margin-bottom: 50px;
+  color: #606060;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 130%;
+}
+@media (max-width: 767px) {
+  .catalog-wrap .subtitle {
+    font-size: 14px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 30px;
+  }
+}
+.catalog-wrap .found {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .catalog-wrap .found {
+    margin-bottom: 20px;
+  }
+}
+.catalog-wrap .found h3 {
+  margin-right: 30px;
+  color: #373737;
+  font-size: 30px;
+  font-weight: 400;
+  line-height: 50px;
+  letter-spacing: 0.6px;
+  text-transform: uppercase;
+}
+@media (max-width: 767px) {
+  .catalog-wrap .found h3 {
+    font-size: 20px;
+  }
+}
+.catalog-wrap .found .num {
+  border-radius: 50%;
+  padding: 5px;
+  min-width: 30px;
+  min-height: 30px;
+  background: #EE132A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+}
+.catalog-wrap .found-tab-menu {
+  display: flex;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+@media (max-width: 1024px) {
+  .catalog-wrap .found-tab-menu {
+    gap: 20px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog-wrap .found-tab-menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+}
+.catalog-wrap .found-tab-menu .found-tab-item {
+  border-radius: 50px;
+  padding: 18px 60px;
+  color: #535353;
+  font-weight: 500;
+  font-size: 16px;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  box-shadow: 0 27px 60px -26px rgba(75, 187, 235, 0.7);
+  cursor: pointer;
+  transition: 0.3s;
+}
+@media (max-width: 1024px) {
+  .catalog-wrap .found-tab-menu .found-tab-item {
+    padding: 14px 32px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog-wrap .found-tab-menu .found-tab-item {
+    padding: 12px 24px;
+    font-size: 14px;
+  }
+}
+.catalog-wrap .found-tab-menu .found-tab-item.active {
+  background: #EE132A;
+  border-color: white;
+  color: white;
+}
+.catalog-wrap .found-tab-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 40px;
+}
+@media (max-width: 1024px) {
+  .catalog-wrap .found-tab-wrap {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px 20px;
+  }
+}
+@media (max-width: 767px) {
+  .catalog-wrap .found-tab-wrap {
+    gap: 30px;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 767px) {
+  .catalog-wrap .found-tab-wrap .car-item:nth-child(n+7) {
+    display: none;
+  }
+}
+
 @font-face {
   font-family: "Gilroy";
   src: url("Gilroy-Regular.eot");
