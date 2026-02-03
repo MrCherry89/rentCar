@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ru" class="fixed">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="x-ua-compatible" content="IE=edge" />
+    <title>Cars</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+
+    <main class="main bg-grey">
+
+      <header class="header header-bg">
+        <div class="container">
+          <div class="header-info">
+            <a href="index.html" class="logo">
+              <img src="img/logo.svg" alt="">
+            </a>
+            <div class="menu-wrap">
+              <ul class="main-menu">
+                <li><a href="#">Каталог автомобилей</a></li>
+                <li><a href="#">Условия аренды</a></li>
+                <li><a href="#">Контакты</a></li>
+              </ul>
+              <div class="soc-icons">
+                <a href="#"><img src="img/soc-icon1.svg" alt=""></a>
+                <a href="#"><img src="img/soc-icon2.svg" alt=""></a>
+                <a href="#" class="hide"><img src="img/soc-icon3.svg" alt=""></a>
+              </div>
+              <div class="phone-wrap">
+                <a href="tel:+79005001010" class="phone">+7 (900) 500-10-10</a>
+                <span>Работаем Пн-Сб с 9:00 до 21:00</span>
+              </div>
+            </div>
+            <div class="soc-icons-mobile">
+              <a href="#"><img src="img/soc-icon1.svg" alt=""></a>
+              <a href="#"><img src="img/soc-icon2.svg" alt=""></a>
+              <a href="#"><img src="img/soc-icon3.svg" alt=""></a>
+            </div>
+            <div class="drop-menu">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <div class="contact-wrap">
+        <div class="container">
+            <div class="breadcrumbs-wrap">
+                <ul class="breadcrumbs">
+                    <li><a href="#">Главная </a></li>
+                    <li><span>Контакты</span></li>
+                </ul>
+                <a href="#" class="back-style">
+                    <img src="img/back-icon.svg" alt="">
+                    <span>Назад</span>
+                </a>
+            </div>
+            <h1>Контакты</h1>
+            <div class="map-wrap">
+                <div class="map-info">
+                    <span>Телефон:</span>
+                    <a href="tel:+79005001010" class="phone">+7 (900) 500‒10‒10</a>
+                    <div class="soc-btns">
+                        <a href="#">
+                            <img src="img/soc-icon1.svg" alt="">
+                            Whatsapp
+                        </a>
+                        <a href="#">
+                            <img src="img/soc-icon2.svg" alt="">
+                            Telegram
+                        </a>
+                    </div>
+                    <span>Адрес:</span>
+                    <b>
+                        г. Москва, ул. Удальцова, д. 36, эт. 3 ком 13-18
+                    </b>
+                    <span>Почта:</span>
+                    <b>Rentcar_info@gmail.com</b>
+                    <a href="#" class="red-btn">Оставить заявку</a>
+                </div>
+                <div id="map"></div>
+            </div>
+            <div class="map-texts">
+                <h3>Текстовое описание блока контактов</h3>
+                <div class="texts">
+                    <p>
+                        В базовый тариф включен пробег 200 км в сутки. 
+                        Пробег суммируется за весь период аренды (не
+                         зависимо от того, сколько проехал автомобиль
+                          за одни сутки). Перепробег оплачивается дополнительно,
+                           в зависимости от класса арендуемого автомобиля в 
+                           соответствии с тарифами
+                    </p>
+                    <p>В базовый тариф включен пробег 200 км в сутки. Пробег
+                         суммируется за весь период аренды (не зависимо от того,
+                          сколько проехал автомобиль за одни сутки). период 
+                          аренды (не зависимо от того, сколько проехал автомобиль
+                           за одни сутки).
+                    </p>
+                </div>
+            </div>
+        </div>
+      </div>
+
+      <footer class="footer no-content">
+        <div class="container">
+            <div class="footer-top">
+            <div class="text-style style2">
+                <img src="img/style-icon.png" alt="">
+                <span> Консультация</span>
+            </div>
+            <h2>подберем для вас лучший вариант</h2>
+            <h4>Оставьте свои контактные данные и получите подбор
+                автомобиля индивидуально под ваш запрос</h4>
+            <form class="leave-request">
+                <input type="text" name="name" placeholder="Введите ваше имя">
+                <input type="tel" name="phone" placeholder="Введите ваш номер телефона">
+                <button class="red-btn">Оставить заявку на подбор</button>
+            </form>
+            <p class="text">
+                Оставляя заявку на нашем сайте, вы даете свое согласие на <a href="#">
+                обработку персональных данных</a>
+                и соглашаетесь с <a href="#">политикой конфиденциальности</a>
+            </p>
+            </div>
+            <div class="footer-bottom">
+            <p class="copyright">© 2025 - Нам по пути. Права защищены</p>
+            <a href="#" class="footer-link">Публичная оферта</a>
+            <a href="#" class="footer-link">Политика конфиденциальности</a>
+            <img src="img/avito-logo.svg" alt="">
+            </div>
+        </div>
+      </footer>
+
+    </main>
+
+
+
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+
+
+    <script>
+        ymaps.ready(init);
+
+        function init() {
+        const map = new ymaps.Map('map', {
+            center: [55.751574, 37.573856], 
+            zoom: 15,
+            controls: []
+        });
+
+        map.behaviors.disable('scrollZoom');
+
+        const placemark = new ymaps.Placemark(
+            [55.751574, 37.573856],
+            {
+            hintContent: 'Мы здесь',
+            balloonContent: 'Наш офис'
+            },
+            {
+            iconLayout: 'default#image',
+            iconImageHref: 'img/map-icon.svg', 
+            iconImageSize: [140, 140],        
+            iconImageOffset: [-20, -40]      
+            }
+        );
+
+        map.geoObjects.add(placemark);
+        }
+    </script>
+
+
+  </body>
+</html>
