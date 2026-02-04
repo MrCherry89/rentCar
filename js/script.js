@@ -80,4 +80,17 @@ $(".found-tab-item").on("click", function(){
   $(this).toggleClass("active");
 })
 
+const thumbsSwiper = new Swiper('.thumbs-slider', {
+  slidesPerView: 4,
+  spaceBetween: 12,
+  watchSlidesProgress: true,
+});
+
+const mainSwiper = new Swiper('.main-slider', {
+  spaceBetween: 10,
+  thumbs: {
+    swiper: thumbsSwiper,
+  },
+});
+
 });
