@@ -93,5 +93,48 @@ const mainSwiper = new Swiper('.main-slider', {
   },
 });
 
+$(".options .info").on("click", function(e){
+  e.stopPropagation();
+
+  // Закрыть все открытые tooltip кроме текущего
+  $(".tooltip2.open").not($(this).find(".tooltip2")).removeClass("open").appendTo(".info");
+
+  let tooltip = $(this).find(".tooltip2");
+
+  // Если tooltip уже открыт — просто закрываем
+  if (tooltip.hasClass("open")) {
+    tooltip.removeClass("open").appendTo(".info");
+    return;
+  }
+
+  // Переносим в body
+  $("body").append(tooltip);
+
+  let offset = $(this).offset();
+  let tooltipWidth = tooltip.outerWidth();
+  let windowWidth = $(window).width();
+
+  let left = offset.left;
+
+  // Проверка, чтобы tooltip не уходил за правый край
+  if (left + tooltipWidth > windowWidth - 10) { 
+    left = windowWidth - tooltipWidth - 10;
+  }
+
+  tooltip.css({
+    position: "absolute",
+    top: offset.top + $(this).outerHeight() + 5,
+    left: left,
+    zIndex: 9999
+  });
+
+  tooltip.addClass("open");
+});
+
+// Клик вне tooltip закрывает его
+$(document).on("click", function(){
+  $(".tooltip2.open").removeClass("open").appendTo(".info");
+});
+
 
 });
